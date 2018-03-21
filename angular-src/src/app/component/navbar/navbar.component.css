@@ -1,0 +1,8 @@
+/* search */
+@media (max-width: 767px) {
+  nav.navbar .search-btn {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+}

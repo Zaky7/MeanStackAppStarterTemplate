@@ -1,0 +1,44 @@
+ <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" routerLinkActive="active" [routerLink]="['/']">Add Stories</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a routerLinkActive="active" [routerLink]="['/']" [routerLinkActiveOptions]="{exact:true}">Home</a></li> 
+          </ul>
+          <!-- Search Field -->
+          <form class="navbar-form" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="search" name="">
+                <div class="input-group-btn">
+                    <button class="btn btn-search" type="submit"><i class="fa fa-search">Search</i></button>
+                </div>
+            </div>
+            <!-- Home, Dashboard, Logout -->
+             <ul class="nav navbar-nav navbar-right">
+              <li *ngIf="!this.authService.loggedIn()"><a  routerLinkActive="active" [routerLink]="['/login']" [routerLinkActiveOptions]="{exact:true}">Login</a></li>
+              <li *ngIf="!this.authService.loggedIn()"><a  routerLinkActive="active" [routerLink]="['/register']" [routerLinkActiveOptions]="{exact:true}">Register </a></li>
+              <li *ngIf="this.authService.loggedIn()"><a  routerLinkActive="active" [routerLink]="['/profile']" [routerLinkActiveOptions]="{exact:true}">Profile </a></li>
+              <li *ngIf="this.authService.loggedIn()"><a  routerLinkActive="active" [routerLink]="['/dashboard']" [routerLinkActiveOptions]="{exact:true}">Dashboard </a></li>
+              <li><a (click)="onLogOutClick()">Logout</a></li>
+          </ul>
+          </form> 
+         
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    
+    

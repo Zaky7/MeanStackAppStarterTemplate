@@ -1,0 +1,23 @@
+<div class="jumbotron text-center">
+	<h1 class="logo-font">TECH BLOG</h1>
+	<p class="lead">Welcome to a software blog for the Tech Junkies</p>
+	<div *ngIf="!this.authService.loggedIn()" >
+		<a class="btn btn-primary" [routerLink]="['/register']">Register</a>
+		<a class="btn btn-default" [routerLink]="['/login']">Login</a>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<h3><a routerLinkActive="active" [routerLink]="['nodejs']">Node and Express JS</a></h3>
+		<p>A rock Solid NodeJs backend using Mongoose for organizing the Models and Querying</p>	
+	</div>
+	<div class="col-md-4">
+		<h3><a routerLinkActive="active" [routerLink]="['angular']">Angular</a> </h3>
+		<p>Angular CLI for generating components and more</p>	
+	</div>
+	<div class="col-md-4">
+		<h3><a routerLinkActive="active" [routerLink]="['mongodb']">MongoDB</a></h3>
+		<p>Full Feature Authentication using JWT web tokens. Login and store Data</p>	
+	</div>		
+</div>
