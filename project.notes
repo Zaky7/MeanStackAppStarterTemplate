@@ -1,0 +1,43 @@
+--	CORS
+  Cross Origin Resourse Sharing
+     When we host a website from a domain (Suppose Google.com) and then if try to access
+     another domain (Suppose github) then browser will Stop it for security Reasons. This policy is 
+     called CROSS ORIGIN resource Sharing.
+
+
+-- Difference between JWT and PASSPORT
+   
+	#Passport is Authentication Middleware for Node.JS, it is not for any specific method of authentication, 
+	the method for authentication like OAuth, 
+	#JWT is implemented in Passportby Strategy pattern, 
+	so it means that you can swap 
+	the authentication mechanism without affecting other parts of your application.
+	Passport is authentication middleware for Node.js. Extremely flexible and modular, 
+	Passport can be unobtrusively dropped in to any Express-based web application. 
+	A comprehensive set of strategies support authentication using a username and password, Facebook, Twitter, and more.
+
+
+	A Passport strategy for authenticating with a JSON Web Token.
+
+	This module lets you authenticate endpoints using a JSON web token. 
+	It is intended to be used to secure RESTful endpoints without sessions.
+
+
+-- Node Authentication API Code on github
+     https://github.com/bradtraversy/nodeauthappc
+
+
+
+
+
+ -----------------------------------------------------------
+     Angular Notes
+ -----------------------------------------------------------
+
+
+ -- flash Message Problem
+    use angular2-flash-messages/module instead of angular2-flash-messages;
+ 
+ 
+
+
