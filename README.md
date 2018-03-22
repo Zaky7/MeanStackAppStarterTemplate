@@ -36,10 +36,10 @@ https://docs.mongodb.com/manual/installation/
       https://stackoverflow.com/a/48826944/7807275
  
  For Mac User
-	 1. Move to data->db     ```  cd /data/db```
-	 2.  Run the mongo server by running command ```mongod```
-	 3. Open new Terminal and move to cd  /usr/local/bin ```cd /usr/local/bin```
-	 4. Type command ./mongo ```./mongo```		
+ * Move to data->db     ```  cd /data/db```
+ *  Run the mongo server by running command ```mongod```
+ * Open new Terminal and move to cd  /usr/local/bin ```cd /usr/local/bin```
+ * Type command ./mongo ```./mongo```		
  
  ### Running the Node Server
 	 npm start
@@ -57,3 +57,4 @@ Move to angular-src folder and run the following command
 ng serve
 ```
    
+
