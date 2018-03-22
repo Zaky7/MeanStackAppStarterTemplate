@@ -50,6 +50,11 @@ Install nodemon it helps you to restart the server as you make changes in  the f
 npm install -g nodemon
 ```
 
+Run the nodemon 
+   ```bash
+nodemon .
+```
+
 You can change the port by specifying the port number in PORT constant in app.js
 ### Running the Front End App
 Move to angular-src folder and run the following command
